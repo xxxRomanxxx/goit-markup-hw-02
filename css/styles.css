@@ -1,0 +1,71 @@
+/*
+Основний колір #212121 
+другорядний колір тексту #757575
+білий колір #FFFFFF
+синій колір #2196F3
+колір футера адреса і телефона rgba(255, 255, 255, 0.6) 
+колір фону 1 секції #2F303A 
+*/
+body {
+background-color: #FFFFFF;
+color:#212121
+}
+.list {
+    list-style: none;
+}
+
+/* site nav */
+.logo-nav {
+    color: #000000;
+}
+.logo-nav > span {
+    color:#2196F3
+} 
+.site-nav .link {
+    color: #212121
+}
+.site-nav .link:hover, .site-nav .link:focus {
+    color:#2196F3
+}
+.auth-nav .link {
+    color: #757575;
+}
+.auth-nav .link:hover, .auth-nav .link:focus {
+    color:#2196F3;
+}
+/* section decision */
+.decision {
+    background-color: #2F303A;
+}
+.decision-title {
+    color:#FFFFFF
+}
+
+/* section advantage */
+.advantage-list .text {
+    color:#757575;
+}
+
+/* section command */
+.command {
+    background-color: #F5F4FA;
+}
+.command-list .text {
+    color: #757575;
+}
+/* footer */
+.footer {
+    background-color: #2F303A;
+}
+.footer-logo {
+    color: #FFFFFF;
+}
+.footer-logo > span {
+    color:#2196F3;
+}
+.footer .text {
+    color: #FFFFFF;
+}
+.footer-address .link {
+    color: rgba(255, 255, 255, 0.6);
+}
