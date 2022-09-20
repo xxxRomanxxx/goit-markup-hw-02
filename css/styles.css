@@ -81,15 +81,17 @@ color:var(--title-text-colot);
     background-color:var(--accent-text-color);
     border-color: transparent;
 }
-button.primery:hover {
+.button.primery:hover {
     color: var(--title-text-colot);
     background-color: #F5F4FA;
     border-color: transparent;
 }
-button {
+.button {
     color: var(--title-text-colot);
     background-color: #F5F4FA;
     border-color: transparent;
+}
+    
 /* example */
 .example {
     background-color: #F5F5F5;
