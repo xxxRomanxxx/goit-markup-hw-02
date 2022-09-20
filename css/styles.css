@@ -1,14 +1,20 @@
 /*
-Основний колір #212121 
-другорядний колір тексту #757575
+Колір заголовку #212121 
+основний колір тексту #757575
 білий колір #FFFFFF
 синій колір #2196F3
 колір футера адреса і телефона rgba(255, 255, 255, 0.6) 
 колір фону 1 секції #2F303A 
 */
+:root {
+    --primary-text-color: #757575;
+    --title-text-colot: #212121;
+    --accent-text-color: #2196F3;
+
+}
 body {
 background-color: #FFFFFF;
-color:#212121
+color:var(--title-text-colot);
 }
 .list {
     list-style: none;
@@ -16,34 +22,34 @@ color:#212121
 
 /* site nav */
 .logo-nav {
-    color: #000000;
+    color: var(--title-text-colot);
 }
 .logo-nav > span {
-    color:#2196F3
+    color: var(--accent-text-color);
 } 
 .site-nav .link {
-    color: #212121
+    color: var(--title-text-colot);
 }
 .site-nav .link:hover, .site-nav .link:focus {
-    color:#2196F3
+    color:var(--accent-text-color);
 }
 .auth-nav .link {
-    color: #757575;
+    color: var(--primary-text-color);
 }
 .auth-nav .link:hover, .auth-nav .link:focus {
-    color:#2196F3;
+    color:var(--accent-text-color);
 }
 /* section decision */
 .decision {
     background-color: #2F303A;
 }
-.decision-title {
+.decision .title {
     color:#FFFFFF
 }
 
 /* section advantage */
-.advantage-list .text {
-    color:#757575;
+.advantage .text {
+    color:var(--primary-text-color);
 }
 
 /* section command */
@@ -51,7 +57,7 @@ color:#212121
     background-color: #F5F4FA;
 }
 .command-list .text {
-    color: #757575;
+    color: var(--primary-text-color);
 }
 /* footer */
 .footer {
@@ -61,11 +67,30 @@ color:#212121
     color: #FFFFFF;
 }
 .footer-logo > span {
-    color:#2196F3;
+    color:var(--accent-text-color);
 }
 .footer .text {
     color: #FFFFFF;
 }
 .footer-address .link {
     color: rgba(255, 255, 255, 0.6);
+}
+/*button*/
+.button.primery {
+    color: #FFFFFF;
+    background-color:var(--accent-text-color);
+    border-color: transparent;
+}
+button.primery:hover {
+    color: var(--title-text-colot);
+    background-color: #F5F4FA;
+    border-color: transparent;
+}
+button {
+    color: var(--title-text-colot);
+    background-color: #F5F4FA;
+    border-color: transparent;
+/* example */
+.example {
+    background-color: #F5F5F5;
 }
