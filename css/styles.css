@@ -15,6 +15,7 @@
 body {
 background-color: #FFFFFF;
 color:var(--title-text-colot);
+font-family: Roboto, sans-serif;
 }
 .list {
     list-style: none;
@@ -23,6 +24,7 @@ color:var(--title-text-colot);
 /* site nav */
 .logo-nav {
     color: var(--title-text-colot);
+    font-family: Raleway, sans-serif;
 }
 .logo-nav > span {
     color: var(--accent-text-color);
@@ -65,6 +67,7 @@ color:var(--title-text-colot);
 }
 .footer-logo {
     color: #FFFFFF;
+    font-family: Raleway, sans-serif;
 }
 .footer-logo > span {
     color:var(--accent-text-color);
