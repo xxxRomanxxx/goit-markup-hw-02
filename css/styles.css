@@ -8,20 +8,19 @@
 */
 :root {
   --primary-text-color: #757575;
-  --title-text-colot: #212121;
+  --title-text-color: #212121;
   --accent-text-color: #2196f3;
   --white-text-color: #ffffff;
   --black-text-color: #000000;
   --footer-adress-color: rgba(255, 255, 255, 0.6);
-  --background-color-primary: #f5f5f5;
+  --background-color-primary: #ffffff;
   --background-color-secondary: #f5f4fa;
   --background-color-accent: #2f303a;
 }
 body {
   background-color: var(--background-color-primary);
-  color: var(--title-text-colot);
+  color: var(--title-text-color);
   font-family: Roboto, sans-serif;
-  font-weight: 700;
   letter-spacing: 0.03em;
 }
 .list {
@@ -32,6 +31,7 @@ body {
 .logo-nav {
   color: var(--black-text-color);
   font-family: Raleway, sans-serif;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
@@ -41,7 +41,7 @@ body {
 }
 
 .site-nav .link {
-  color: var(--title-text-colot);
+  color: var(--title-text-r);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,6 +68,9 @@ body {
 /* section decision */
 .hero {
   background-color: var(--background-color-accent);
+}
+.hero-title {
+  color: var(--white-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -75,14 +78,15 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-.hero .title {
-  color: var(--white-text-color);
-}
 /*hero-button*/
 .hero-button {
   color: var(--white-text-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   border-color: transparent;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   display: flex;
@@ -93,22 +97,56 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--title-text-colot);
+  color: var(--title-text-color);
   background-color: var(--background-color-secondary);
   border-color: transparent;
 }
-
+/* section title */
+.advantage-title,
+.work-title,
+.command-title,
+.example-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
 /* section advantage */
+.advantage {
+  background-color: var(--background-color-primary);
+}
+
+.advantage h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
 .advantage .text {
   color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* section command */
 .command {
   background-color: var(--background-color-secondary);
 }
-.command-list .text {
+.command li {
+  background-color: var(--white-text-color);
+}
+.command-list h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.command-list p {
   color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 }
 /* footer */
 .footer {
@@ -118,6 +156,9 @@ body {
   color: var(--white-text-color);
   font-family: Raleway, sans-serif;
   text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
 }
 .footer-logo > span {
   color: var(--accent-text-color);
@@ -125,22 +166,34 @@ body {
 .footer {
   color: var(--white-text-color);
 }
-.footer-address .link {
+
+.footer-adress .link {
   color: var(--footer-adress-color);
   text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
-.footer-address .link:hover,
-.footer-address .link:focus {
+
+.footer-adress p {
+  color: var(--white-text-color);
+}
+.footer-adress p:hover,
+.footer-adress p:focus {
+  color: var(--accent-text-color);
+}
+
+.footer-adress .link:hover,
+.footer-adress .link:focus {
   color: var(--accent-text-color);
 }
 
 /* example section*/
-.example {
-  background-color: var(--background-color-primary);
-}
 
 .button {
-  color: var(--title-text-colot);
+  color: var(--title-text-color);
   background-color: var(--background-color-secondary);
   font-family: Roboto, sans-serif;
   border-color: transparent;
@@ -158,17 +211,40 @@ body {
   border-color: transparent;
 }
 
-.example a {
-  color: var(--title-text-colot);
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+ {
+}
+.example-list a {
   text-decoration: none;
 }
 
-.sample-list p {
+.example-list h2 {
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.example-list p {
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
+}
+
+/* hidden title */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
